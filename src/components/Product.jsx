@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect,useState } from "react";
 
 const Product = () => {
   // TODO: Remove below const and instead import them from chakra
@@ -9,10 +10,19 @@ const Product = () => {
   const Heading = () => <div />;
   const Tag = () => <div />;
   const TagLabel = () => <div />;
+
+  const [data,setData]=useState([]);
+
+  useEffect(()=>{
+    fetch.get("http://localhost:8080/products")
+    .then((s)=>s.json())
+    .then(data)=>
+    console.log(data)
+  })
   return (
     <Stack data-cy="product">
       <Image data-cy="product-image" />
-      <Text data-cy="product-category"></Text>
+      <Text data-cy="product-category">menu</Text>
       <Tag>
         <TagLabel data-cy="product-gender"></TagLabel>
       </Tag>
