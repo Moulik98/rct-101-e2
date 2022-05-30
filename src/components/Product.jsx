@@ -11,7 +11,7 @@ const Product = () => {
   const Tag = () => <div />;
   const TagLabel = () => <div />;
 
-  const [data,setData]=useState([]);
+  const [data,setdata]=useState([]);
 
   useEffect(()=>{
     fetch.get("http://localhost:8080/products")
