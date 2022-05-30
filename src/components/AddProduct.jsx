@@ -12,7 +12,7 @@ const AddProduct = () => {
   // const RadioGroup = () => <div />;
   // const Radio = () => <div />;
 
-  const {isOpen,onOpen,OnClose}=useDisclosure()
+  const {isOpen,onOpen,onClose}=useDisclosure()
 
   return (
     <>
