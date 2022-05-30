@@ -26,7 +26,7 @@ const Product = () => {
   return (
     <Stack data-cy="product">
       <Image data-cy="product-image" />
-      <Text data-cy="product-category">menu</Text>
+      <Text data-cy="product-category"></Text>
       <Tag>
         <TagLabel data-cy="product-gender"></TagLabel>
       </Tag>
